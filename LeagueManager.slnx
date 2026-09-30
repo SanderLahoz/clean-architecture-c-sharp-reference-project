@@ -5,5 +5,6 @@
     <Project Path="src/LeagueManager.Infrastructure/LeagueManager.Infrastructure.csproj" />
     <Project Path="src/LeagueManager.Persistence/LeagueManager.Persistence.csproj" />
     <Project Path="src/LeagueManager.Presentation/LeagueManager.Presentation.csproj" />
+    <Project Path="src\LeagueManager.WebApi\LeagueManager.WebApi.csproj" Type="Classic C#" />
   </Folder>
 </Solution>
