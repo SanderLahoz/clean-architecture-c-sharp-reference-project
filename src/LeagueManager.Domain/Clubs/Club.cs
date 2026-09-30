@@ -1,4 +1,6 @@
 ﻿using LeagueManager.Domain.MarkerInterfaces;
+using LeagueManager.Domain.Players;
+using LeagueManager.Domain.Stadiums;
 
 namespace LeagueManager.Domain.Clubs;
 
@@ -13,7 +15,10 @@ public class Club : BaseEntity, IAggregateRoot
     public SocialLinks Links { get; private set; }
     
     public Address Address {get; private set;}
+
+    public List<Player> Players { get; private set; } = [];
     
+    public Stadium Stadium { get; private set; }
     
     // Required for EF core
     private Club() { }
@@ -50,5 +55,15 @@ public class Club : BaseEntity, IAggregateRoot
     public void UpdateSocialLink(SocialLinks socialLinks)
     {
         Links = socialLinks;
+    }
+
+    public void AddPlayer(Player player)
+    {
+        Players.Add(player);
+    }
+
+    public void RemovePlayer(Player player)
+    {
+        Players.Remove(player);
     }
 }
