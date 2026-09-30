@@ -1,4 +1,6 @@
-﻿namespace LeagueManager.Domain.Clubs;
+﻿using LeagueManager.Domain.MarkerInterfaces;
+
+namespace LeagueManager.Domain.Clubs;
 
 public record Address : IValueObject
 {

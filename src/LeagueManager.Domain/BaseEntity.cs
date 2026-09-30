@@ -1,4 +1,6 @@
-﻿namespace LeagueManager.Domain
+﻿using LeagueManager.Domain.MarkerInterfaces;
+
+namespace LeagueManager.Domain
 {
     public abstract class BaseEntity : IEntity
     {

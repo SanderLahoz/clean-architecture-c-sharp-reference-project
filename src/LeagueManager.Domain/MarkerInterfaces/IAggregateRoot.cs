@@ -1,4 +1,4 @@
-﻿namespace LeagueManager.Domain
+﻿namespace LeagueManager.Domain.MarkerInterfaces
 {
     public interface IAggregateRoot
     {
