@@ -18,6 +18,8 @@ public class Club : BaseEntity, IAggregateRoot
     public Address Address {get; private set;}
 
     public List<Player> Players { get; private set; } = [];
+
+    public List<StaffMember> Members { get; private set; } = [];
     
     public Stadium Stadium { get; private set; }
     
